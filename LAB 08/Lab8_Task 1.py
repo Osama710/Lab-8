@@ -1,0 +1,17 @@
+print("Muhammad Osama   18b-003-cs  CS-(A)")
+print("Lab-08   28/12/2018")
+print("Programming Exercise: Q-1")
+"""1. Construct the strings by using the string time format function strftime ()
+a) (Thursday, July 13 2018')
+b) ('09:40 PM Central Daylight Time on 07/13/2018')
+c) ('I will meet you on Thu July 13 at 09:40 PM.')"""
+print("1a")
+import time
+local_time = time.strftime(('%A, %B %d %Y'), time.localtime())
+print(local_time)
+print("1b")
+time_zone = time.strftime(('%T %p %Z on %D'), time.localtime())
+print(time_zone)
+print("1c")
+time_meet = time.strftime(('I will meet you on %a %B %d at %T'), time.localtime())
+print(time_meet)
